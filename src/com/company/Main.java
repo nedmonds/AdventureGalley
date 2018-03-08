@@ -52,6 +52,7 @@ public class Main {
             prompt = input.readLine();
         }
     }
+
     //This is a utility method to set up all the rooms and their connections.
     //Returns the main Room.
     private static Room addRooms() {
