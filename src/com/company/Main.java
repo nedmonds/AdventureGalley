@@ -19,6 +19,12 @@ public class Main {
         // offer help, since this is the player's first time playing
         String prompt = input.readLine(curRoom.getDescription()+ " Type your command. If you need help, type 'help.'");
 
+        String prompt = reader.next();
+
+        String name = prompt;
+        Player user = new Player(name);
+        System.out.println(curRoom.getDescription());
+        prompt = reader.next();
 
         while(true) {
             String[] words = prompt.split(" ");
