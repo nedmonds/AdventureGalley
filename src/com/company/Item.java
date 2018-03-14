@@ -1,6 +1,6 @@
 package com.company;
 
-public class Item {
+public abstract class Item {
     private String name;
     private String description;
     private boolean edible;
@@ -34,4 +34,6 @@ public class Item {
     public void setEdible(boolean edible) {
         this.edible = edible;
     }
+
+    public abstract String handle(String s);
 }

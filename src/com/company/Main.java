@@ -55,7 +55,7 @@ public class Main {
                 }
             }
             else if (prompt.equalsIgnoreCase("help")){
-                System.out.println("Type 'look' to explore your surroundings, Type 'quit' to exit the game, Type 'help' for help.");
+                System.out.println(listOfCommands());
             }
             else if (prompt.equalsIgnoreCase("quit")) break;
 
