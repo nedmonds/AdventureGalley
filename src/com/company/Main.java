@@ -79,4 +79,17 @@ public class Main {
         return home;
 
     }
+
+    public static String listOfCommands() {
+            return ("Here's a list of useful commands: \nThe 'Look' command will " +
+                    "give you a description of your surroundings. \nThe 'Examine' command will give you a description of an" +
+                    "object. \nThe 'Inventory' command will give you a list of the items in your inventory and a description of" +
+                    " them. \nThe 'Restart' command will restart the game \nThe 'Quit' command will quit the game for you. Make " +
+                    "sure you save before you quit!");
+
+
+    }
+
+
+
 }
