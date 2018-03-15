@@ -9,6 +9,12 @@ public class Sickle extends Item{
         if(s.equalsIgnoreCase("examine")){
             return this.getDescription();
         }
+        else if(s.equalsIgnoreCase("What's your purpose?")){
+            return "TO ABOLISH THE BOURGEOISIE!";
+        }
+        else if(s.equalsIgnoreCase("When were you born?")){
+            return "October 1917... what a great time";
+        }
         else{
             return "I don't know how to" + s + "a sickle.";
         }
