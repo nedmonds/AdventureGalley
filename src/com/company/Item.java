@@ -11,11 +11,18 @@ public abstract class Item {
         this.description = description;
         this.edible = edible;
     }
+
+    /*
+    The handle method accepts a word and figures out the proper reply
+    (in the form of a string) to that word.
+     */
+    public abstract String handle(String s);
+
     public String getName() {
         return name;
     }
 
-    public void setItem(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
