@@ -61,6 +61,7 @@ public class Main {
             prompt = reader.nextLine();
         }
     }
+
     //This is a utility method to set up all the rooms and their connections.
     //Returns the main Room.
     private static Room addRooms() {
@@ -94,9 +95,7 @@ public class Main {
         cave.addRoom(garage);
         cave.addRoom(home);
         return home;
-
     }
-
     public static String listOfCommands() {
             return ("Here's a list of useful commands: \nThe 'Look' command will " +
                     "give you a description of your surroundings. \nThe 'Examine' command will give you a description of an" +
