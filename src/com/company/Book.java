@@ -2,7 +2,7 @@ package com.company;
 
 public class Book extends Item{
 
-    public Book(String name, String description, boolean edible) {
+    public Book(){
         super("Book", "A super boring book written by Karl Marx and Friedrich Engels", false);
     }
         @Override

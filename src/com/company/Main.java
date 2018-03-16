@@ -19,8 +19,6 @@ public class Main {
         // offer help, since this is the player's first time playing
         String prompt = input.readLine(curRoom.getDescription()+ " Type your command. If you need help, type 'help.'");
 
-        String prompt = reader.next();
-
         String name = prompt;
         Player user = new Player(name);
         System.out.println(curRoom.getDescription());
@@ -55,7 +53,7 @@ public class Main {
                 }
             }
             else if (verb.equalsIgnoreCase("help")){
-                System.out.println("Type 'look' to explore your surroundings, Type 'quit' to exit the game, Type 'help' for help.");
+                System.out.println(listOfCommands());
             }
             else{
                 System.out.println("You can't do that ");
