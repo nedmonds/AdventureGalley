@@ -41,6 +41,4 @@ public abstract class Item {
     public void setEdible(boolean edible) {
         this.edible = edible;
     }
-
-    public abstract String handle(String s);
 }
