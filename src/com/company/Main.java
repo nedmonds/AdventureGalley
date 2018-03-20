@@ -16,9 +16,9 @@ public class Main {
         String prompt = input.readLine(curRoom.getDescription()+ " Type your command. If you need help, type 'help.'");
 
         while(true) {
-            String[] words = prompt.split(" ");
-            String directObject = words[words.length-1];
-            String verb = words[0];
+            String arr[] = prompt.split(" ", 2);
+            String verb = arr[0];  //This is the throwaway word
+            String directObject = arr[1];
             if(curRoom.hasItem(directObject)) {
                 Item whichItem = curRoom.getItem(directObject);
                 String response = whichItem.handle(verb);
@@ -44,7 +44,7 @@ public class Main {
                 }
             }
             else if (verb.equalsIgnoreCase("help")){
-                System.out.println("Type 'look' to explore your surroundings, Type 'quit' to exit the game, Type 'help' for help.");
+                System.out.println(listOfCommands());
             }
             else{
                 System.out.println("You can't do that ");
@@ -63,6 +63,7 @@ public class Main {
 
         home.addItem(new Book());
         home.addItem(new Apple());
+        home.addItem(new BigGreenMagicBook());
 
         arcade.addRoom(home);
         arcade.addRoom(cave);
