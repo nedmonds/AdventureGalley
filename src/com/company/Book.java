@@ -11,7 +11,7 @@ public class Book extends Item{
             return this.getDescription();
         }
         else{
-        return "I don't know how to" + s + "a book.";
+        return "I don;t know how to" + s + "a book.";
         }
 }
 }

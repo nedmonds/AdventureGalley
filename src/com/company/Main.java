@@ -78,9 +78,7 @@ public class Main {
         cave.addRoom(garage);
         cave.addRoom(home);
         return home;
-
     }
-
     public static String listOfCommands() {
             return ("Here's a list of useful commands: \nThe 'Look' command will " +
                     "give you a description of your surroundings. \nThe 'Examine' command will give you a description of an" +
@@ -90,7 +88,4 @@ public class Main {
 
 
     }
-
-
-
 }
